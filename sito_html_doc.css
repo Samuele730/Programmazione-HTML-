@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+body{
+    margin: 0;
+    font-family: "Lexend", sans-serif;
+    background-color: #E5E5E5;
+}
+#header{
+    background-color: #14213D;
+    padding: 30px;
+}
+header h1{
+    text-align: center;
+    margin: 0;
+    color: #E5E5E5;
+}
+main{
+    background-color: #FCA311;
+    margin: 60px auto;
+    width: 70%;
+    padding: 20px;
+    border: 6px solid #14213D;
+    color: #14213D;
+}
+#main_header h2{
+    font-size: 30px;
+}
+main section p{
+    line-height: 30px;
+    font-size: 18px;
+}
+main section h3 , main section h4 , main section h5{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+ul li{
+    margin: 30px;
+}
+main section ul{
+    padding-left: 0px;
+}
+pre{
+    margin-top: 30px;
+}
+pre code{
+    background-color: #1a2238;
+    border-radius: 16px;
+    color: #f8f8f2;
+    font-size: 17px;
+    padding: 24px 40px;
+    display: block;
+    box-shadow: 0 4px 24px rgba(20,33,61,0.15);
+    font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+    overflow-x: auto;
+    transition: box-shadow 0.3s;
+}
+code{
+    word-spacing: 0.2em;
+    line-height: 2;
+}
+#testo_esempio{
+    font-size: 20px;
+    font-weight: bold;
+}
+ol{
+}
+ol li{
+    margin-top: 20px;
+}
+main section h6{
+    margin-bottom: 0px;
+    font-size: 30px;
+    margin-top: 60px;
+}
+pre code{
+    padding-left: 30px;
+}
+#salvataggio_file{
+    font-size: 20px;
+    font-weight: bold;
+}
+span{
+    font-weight: bold;
+    color: #14213D;
+}
+footer{
+    color: #E5E5E5;
+    background-color: #14213D;
+    text-align: center;
+    padding: 20px;
+}
+img{
+    height: 300px;
+}
+ul li span a{
+    text-decoration: none;
+}
+#html_definizione{
+    border-left: 3px solid black;
+}
+#html_definizione p{
+    margin-left: 10px;
+}
+code{
+    background-color: #E5E5E5;
+    padding: 0px 5px;
+    font-size: 17px;
+    display: inline-block;
+    box-shadow: 0 4px 24px rgba(20,33,61,0.15);
+    font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
+}
+@media screen and (max-width: 1000px) {
+    #scroll_page{
+        opacity: 0;
+        pointer-events: none;
+    }
+    img{
+        height: 200px;
+    }
+}

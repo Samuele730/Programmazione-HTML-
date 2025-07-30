@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guida HTML: cos’è e come usarlo al meglio</title>
+    <meta name="description" content="HTML è l’acronimo di “HyperText Markup Language” ovvero un linguaggio di markup che sta alla base della struttura della pagine web">
+    <meta name="keywords" content="HTML, linguaggio HTML, guida HTML, come usare HTML, storia HTML, struttura HTML, tag HTML, editor HTML">
+    <link rel="stylesheet" href="sito_html_doc.css">
+</head>
+<body>
+    <header id="header">
+        <h1>Il linguaggio HTML</h1>
+    </header>
+    <main>
+        <header id="main_header" >
+            <h2>Guida HTML: cos’è e come usarlo al meglio</h2>
+        </header>
+        <section>
+        <p>Se sei agli inizi nel mondo della programmazione web, probabilmente hai sentito parlare di HTML. Ma cos'è esattamente? A cosa serve? In questo articolo ti guiderò passo passo alla scoperta del linguaggio base del web. Imparerai cos'è HTML, la sua storia, come funziona, come è strutturato un template HTML, e dove poter scrivere e studiare il codice HTML.</p>
+        </section>
+        <section>
+        <h3>Cos'è HTML?</h3>
+        <p>HTML è l’acronimo di HyperText Markup Language. Si tratta del linguaggio standard usato per creare pagine web. In parole semplici, HTML comunica al browser quali contenuti visualizzare come: titoli, paragrafi, immagini, link e molto altro.</p>
+        <div id="html_definizione">
+            <p>HTML non è un linguaggio di programmazione, ma un linguaggio di markup: serve a strutturare e organizzare il contenuto di una pagina web.</p>
+        </div>
+        </section>
+        <section>
+        <h4>La Storia del Linguaggio HTML</h4>
+        <p>Il linguaggio HTML è nato nei primi anni ’90 grazie a <strong>Tim Berners-Lee</strong>, il fondatore del <strong>World Wide Web</strong>. La prima versione di HTML fu proposta nel <strong><time datetime="1991"> 1991</time></strong> con l’obiettivo di facilitare la condivisione di documenti scientifici tra ricercatori universitari. Con il tempo, HTML è stato continuamente aggiornato e migliorato:</p>
+        <ul>
+            <li>HTML 2.0 è stato standardizzato nel <strong><time datetime="1995">1995</time></strong></li>
+            <li>HTML 4.01 è diventato uno dei formati più diffusi negli anni <strong><time datetime="2000">2000</time></strong></li>
+            <li>HTML5, introdotto nel <strong><time datetime="2014">2014</time></strong>, ha innovato il web con il supporto per contenuti multimediali</li>
+        </ul>
+        </section>
+        <section>
+        <h5>Come Funziona l'HTML</h5>
+        <p>Ogni elemento HTML è composto da tag HTML che servono a delimitare e descrivere il contenuto all’interno di una pagina web. Nella maggior parte dei casi, un tag HTML è formato da due parti: un tag di apertura, es. <code>&lt;p&gt;</code> , e un tag di chiusura, es. <code>&lt;/p&gt;</code>. Entrambi sono racchiusi tra le cosiddette parentesi angolari: <span>&lt;</span> (minore) e <span>&gt;</span> (maggiore).</p>
+        <p>Il tag di apertura indica l’inizio dell’elemento HTML, mentre il tag di chiusura — che è identico ma preceduto da una barra (<span>/</span>) — ne segna la fine. All’interno di questi due tag viene inserito il contenuto vero e proprio, cioè il testo che vogliamo visualizzare nella pagina:</p>
+        <p>Per esempio, se vogliamo creare un paragrafo, utilizzeremo il tag <span>&lt;p&gt;</span> per iniziare, poi scriveremo il nostro testo, e infine chiuderemo l’elemento con <span>&lt;/p&gt;</span>. Il codice completo sarà il seguente:</p>
+        <div id="codice_esempio">
+            <pre>
+<code>&lt;p&gt;Questo è un paragrafo&lt;/p&gt;</code>
+            </pre>
+        <p>In questo caso:</p>
+        <ul>
+            <li>&lt;p&gt; è il tag di apertura del paragrafo</li>
+            <li>Questo è un paragrafo di esempio. è il contenuto</li>
+            <li>&lt;/p&gt; è il tag di chiusura</li>
+        </ul>
+        <p>Per aiutarti a capire meglio, ecco un elenco dei tag HTML più utilizzati, che incontrerai spesso quando costruirai una pagina web:</p>
+        <ul>
+            <li>&lt;p&gt;: definisce un paragrafo di testo.</li>
+            <li>&lt;a&gt;: definisce un link.</li>
+            <li>&lt;img&gt;: serve per inserire immagini.</li>
+            <li>&lt;ul&gt; e &lt;ol&gt;: definiscono rispettivamente liste non ordinate e ordinate.</li>
+        </ul>
+        </div>
+    </section>
+    <section>
+        <h6>Com’è fatta una pagina HTML?</h6>
+        <p>Ogni pagina HTML ha una struttura base, un po’ come uno scheletro. Proprio come il corpo umano ha uno scheletro che sostiene tutti gli organi, anche una pagina web ha bisogno di una base solida su cui costruire tutto il contenuto che verrà poi mostrato nel browser. Senza questa struttura iniziale, il codice HTML sarebbe disorganizzato e i browser non saprebbero come interpretarlo correttamente.</p>
+        <p>In pratica, quando crei una nuova pagina HTML, ci sono alcuni elementi essenziali che vanno sempre inclusi. Anche se all’inizio ti sembrano complicati, col tempo ti verranno naturali come l’intestazione di una lettera o il titolo di un documento.</p>
+        <div id="codice_esempio">
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;La mia prima pagina HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Ciao, mondo!&lt;/h1&gt;
+    &lt;p&gt;Questa è la mia prima pagina web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <h6>Spiegazione dei principali elementi:</h6>
+        <ul>
+            <li>&lt;!DOCTYPE html&gt;: questa riga serve per dire al browser che stiamo usando HTML5, cioè l’ultima versione del linguaggio HTML.</li>
+            <li>&lt;html&gt;: è il contenitore principale di tutta la pagina. Tutto il contenuto va scritto dentro questo tag.</li>
+            <li>&lt;head&gt;: questa parte non mostra niente sulla pagina visibile, ma contiene informazioni importanti come il titolo della pagina (quello che vedi nella scheda del browser) e altre impostazioni tecniche.</li>
+            <li>&lt;body&gt;: è la parte più importante per noi all’inizio, perché qui va tutto ciò che l’utente vede sulla pagina: titoli, testi, immagini, link, ecc.</li>
+        </ul>
+    </section>
+    <section>
+        <h6>Dove Scrivere Codice HTML</h6>
+        <p>Puoi scrivere HTML con qualsiasi editor di testo anche con il <span>blocco note</span>, ma per comodità si usano strumenti più adatti:</p>
+        <p>Alcuni editor consigliati per principianti sono:</p>
+        <ul>
+            <li><span><a href="https://code.visualstudio.com/">Visual Studio Code</a></span> (gratuito e potente)</li>
+            <li><span><a href="https://www.sublimetext.com/">Sublime Text</a></span> (leggero e veloce)</li>
+            <li><span><a href="https://notepad-plus-plus.org/">Notepad++</a></span> (semplice e pratico)</li>
+        </ul>
+        <p>Dopo aver scritto il tuo codice HTML in un editor di testo, è importante salvarlo correttamente affinché il browser possa riconoscerlo e mostrarlo come una pagina web.</p>
+        <div id="salvataggio_file">Ecco come puoi fare:</div>
+        <ul>
+            <li>Apri il tuo editor di testo (ad esempio Blocco Note su Windows).</li>
+            <li>Vai su <span>File</span> e poi "Salva con nome"</li>
+            <li>Scegli la cartella in cui vuoi salvare il file come il desktop</li>
+            <li>Assicurati di dare al file un nome che termini con code<span>.html</span> (ad esempio, <span>pagina.html</span>)</li>
+            <li>Infine, clicca su <span>"Salva"</span></li>
+        </ul>
+        <p>Per vedere il risultato finale, apri il file salvato facendo doppio clic su di esso:</p>
+        <img src="assets/documento_html.png" alt="">
+    </section>
+    <section>
+        <h6>Dove Studiare HTML</h6>
+        <p>Se vuoi imparare HTML da zero, ci sono tantissime risorse gratuite. Ecco alcune delle migliori:</p>
+        <ul>
+            <li><span><a href="https://www.w3schools.com/">W3Schools</a></span> (ottimo per principianti)</li>
+            <li><span><a href="https://developer.mozilla.org/">MDN Web Docs</a></span> (risorsa completa e dettagliata)</li>
+            <li><span><a href="https://www.codecademy.com/">Codecademy</a></span> (corsi interattivi)</li>
+            <li><span><a href="https://www.freecodecamp.org/">freeCodeCamp</a></span> (apprendimento pratico)</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <small>&copy; 2025 Samuele. Tutti i diritti riservati. I contenuti di questo sito sono protetti da copyright.</small>
+</footer>
+</body>
+</html>
